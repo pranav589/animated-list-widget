@@ -122,9 +122,9 @@ export default function Widget({
     return () => cancelAnimationFrame(animate);
   }, [feedbacks]);
 
-  // if (!isSameDomain) {
-  //   return null;
-  // }
+  if (!isSameDomain) {
+    return null;
+  }
 
   return (
     <>
