@@ -40,6 +40,7 @@ export default function Widget({
         .from("Feedback")
         .select("*")
         .eq("projectId", projectId)
+        .eq("type", "TEXT")
         .eq("isFavorite", true);
 
       if (error) {
